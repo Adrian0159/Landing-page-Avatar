@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #040714;
+  width: 100vw;
+}
+
+header {
+  background-color: rgb(4, 7, 20, 0.5);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+li {
+  list-style: none;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.img-logo {
+  height: 70px;
+  padding: 5px 0;
+  margin-left: 20px;
+}
+
+.menu-desctop {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.header__container li img {
+  height: 24px;
+  cursor: pointer;
+  margin: 0 30px;
+}
+
+.header__container li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.header__container li a:hover {
+  background-color: #fff;
+  color: #040714;
+}
+
+.hero {
+  background-image: url(./imagens/Avatar-2.jpg_2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-top: -70px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo__avatar {
+  max-width: 700px;
+  text-align: center;
+}
+
+.logo__avatar__img {
+  width: 100%;
+  filter: brightness(200%);
+  filter: contrast(200%);
+}
+
+.logo__avatar h2 {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 18px;
+}
+
+.descricao {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.descricao h2 {
+  color: #fff;
+  padding: 32px 0 10px 0;
+}
+
+.descricao p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 32px;
+  padding: 0 10px;
+}
+
+.logo__avatar__btn {
+  background-color: #ff006f;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  margin-top: 40px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.cenas {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.cenas__move {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.cenas__move img {
+  width: 100%;
+  height: 100%;
+}
+
+.cenas h2 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.elenco__lista {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+}
+
+.elenco__lista img {
+  width: 100%;
+}
+
+.elenco h2 {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.elenco {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.elenco__lista h3 {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.elenco__lista p {
+  color: #626262;
+  font-size: 14px;
+}
+
+.footer {
+  padding: 26px 8px;
+}
+
+.footer__container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.footer__logo {
+  width: 80px;
+  margin: 0 auto 10px;
+}
+
+.footer__links {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer__links__item {
+  display: inline-block;
+}
+
+.footer__links__item a {
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
+  color: #fff;
+}
+
+.footer__links__item a:hover {
+  color: #626262;
+}
+
+.footer p {
+  margin-bottom: 16px;
+  color: #626262;
+}
+
+.language-selector {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .hero {
+    background-image: url(./imagens/Avatar-2-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .elenco__lista {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 5%;
+  }
+
+  .cenas__move {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 5%;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .elenco__lista {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 5%;
+  }
+
+  .cenas__move {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 3%;
+  }
+
+  .menu-desctop {
+    display: none;
+  }
+
+  .menu-mobile {
+    display: block;
+    padding-top: 40px;
+  }
+
+  .menu-mobile li {
+    margin-bottom: 20px;
+  }
+
+  .hero {
+    margin-top: -175px;
+    background-image: url(./imagens/Avatar-2-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: flex-end;
+  }
+
+  .logo__avatar {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cenas__move {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
